@@ -15,7 +15,7 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
       <div className="mx-auto max-w-[1200px] space-y-3 p-6">
         <div className="flex items-start justify-between">
           <div className="mr-5 flex-1 space-y-5">
-            <h1 className="text-2xl font-bold">Ração Pedegree</h1>
+            <h1 className="text-2xl font-bold">Ração Pedegree {params.id}</h1>
             <Image src={racao} alt="" className="w-full border" />
           </div>
           <div className="mt-12 flex-1 space-y-5">

@@ -4,11 +4,8 @@ import Image from "next/image";
 import racao from "../../../public/images/pedigree.png";
 import nutrivale from "../../../public/images/nutrivale.png";
 import { ShoppingBag } from "lucide-react";
-import Link from "next/link";
 
 const CompanyPage = ({ params }: { params: { id: string } }) => {
-  const baseUrl = process.env.APP_BASE_URL;
-
   return (
     <div>
       <Header />
@@ -22,7 +19,9 @@ const CompanyPage = ({ params }: { params: { id: string } }) => {
               className="mx-auto"
               alt="Nutrivale"
             />
-            <h3 className="text-xl font-bold text-primary">Nutrivale Rações</h3>
+            <h3 className="text-xl font-bold text-primary">
+              Nutrivale Rações {params.id}
+            </h3>
             <p className="text-xs">
               Av. Dr. Ulisses Guimarães, 12 - d - Portal da Cidade, Petrolina -
               PE, 56313-295

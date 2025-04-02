@@ -14,7 +14,7 @@ const CategoriesDetailPage = ({ params }: { params: { id: string } }) => {
       <div className="mx-auto max-w-[1200px] space-y-3 p-6">
         <div className="items-center justify-between">
           <p className="text-sm text-cinza">Produtos em</p>
-          <h1 className="text-2xl font-bold">Ração</h1>
+          <h1 className="text-2xl font-bold">Ração {params.id}</h1>
         </div>
         <div className="grid grid-cols-4 gap-4">
           <div className="w-[277px]">

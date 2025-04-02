@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <div className="border-b">
       <div className="mx-auto flex max-w-[1200px] justify-between p-6">
-        <Link href={baseUrl}>
+        <Link href={baseUrl ?? ""}>
           <Image src={logo} width={43.8} height={55.05} alt="Logo Pedeagro" />
         </Link>
         <div className="flex items-center justify-between rounded-lg border px-3 py-2">
