@@ -13,8 +13,8 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
     <div>
       <Header />
       <div className="mx-auto max-w-[1200px] space-y-3 p-6">
-        <div className="flex items-start justify-between">
-          <div className="mr-5 flex-1 space-y-5">
+        <div className="flex flex-col md:flex-row items-start justify-between">
+          <div className="mr-5 flex-1 space-y-5 w-full">
             <h1 className="text-2xl font-bold">Ração Pedegree {params.id}</h1>
             <Image src={racao} alt="" className="w-full border" />
           </div>
@@ -35,7 +35,7 @@ const ProductPage = ({ params }: { params: { id: string } }) => {
                 Quantidade:{" "}
                 <input
                   type="number"
-                  min={0}
+                  min={1}
                   placeholder="1"
                   className="w-[70px] rounded-md border border-primary px-3 py-2"
                 />
