@@ -5,7 +5,7 @@ import { Facebook, Instagram } from "lucide-react";
 const Footer = () => {
   return (
     <div className="bg-primary">
-      <div className="mx-auto flex w-[1200px] justify-between p-6">
+      <div className="mx-auto flex flex-col md:flex-row max-w-[1200px] items-center space-y-10 md:space-y-0 justify-between p-6">
         <div className="flex-1">
           <Image src={logo} alt="Pedeagro logo" />
         </div>
@@ -52,8 +52,8 @@ const Footer = () => {
           <div></div>
         </div>
       </div>
-      <div className="mx-auto w-[1200px] justify-between space-y-5 p-6">
-        <div className="flex items-center justify-end space-x-5">
+      <div className="mx-auto max-w-[1200px] flex-col md:flex-row justify-between space-y-5 p-6">
+        <div className="flex items-center justify-center md:justify-end space-x-5">
           <h2 className="text-xl font-bold text-white">
             Fique por dentro de tudo
           </h2>
