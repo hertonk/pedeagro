@@ -21,7 +21,7 @@ const ProductListItem = () => {
           <div className="my-3 text-base">
               <span>R$ 85,00</span>
           </div>
-          <a href={`${baseUrl}/produto/10` ?? ""} className="bg-primary flex w-full items-center justify-center rounded-md py-2 text-center text-xs font-bold text-white">
+          <a href={`${baseUrl}/produto/10`} className="bg-primary flex w-full items-center justify-center rounded-md py-2 text-center text-xs font-bold text-white">
               <ShoppingBag size={16} className="mr-2" />
               <span>Compre agora</span>
           </a>

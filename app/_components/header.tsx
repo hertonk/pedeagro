@@ -57,7 +57,7 @@ const Header = () => {
           <a href={baseUrl} className="font-bold">
             Início
           </a>
-          <a href={baseUrl + "/categorias"} className="font-bold">
+          <a href={baseUrl + "/categorias/1"} className="font-bold">
             Categorias
           </a>
         </nav> 
